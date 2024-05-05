@@ -41,7 +41,7 @@ const registerUser= asyncHandler(async (req,res)=>{
     }
     if(!user){
         res.status(400)
-        throw new error('Invalid user data')
+        throw new Error('Invalid user data')
     }
 }) 
 //@desc Login a user
